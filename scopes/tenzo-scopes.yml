@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.gotenzo.com/developers/auth-flow/
+docs: https://support.gotenzo.com/developers/auth-flow/
+notes: >-
+  Scopes are granted per partner application by Tenzo at provisioning time and returned in the
+  token response `scope` field (space-delimited). The list below is the set documented in the
+  Authorization Code flow guide; a partner's granted scopes are a subset assigned by Tenzo. All
+  documented scopes are read-only.
+schemes:
+- name: OAuth2
+  source: https://support.gotenzo.com/developers/auth-flow/
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://auth.gotenzo.com/o/authorize
+    tokenUrl: https://auth.gotenzo.com/o/token/
+scopes:
+- scope: tenzo/sales:read
+  description: Read access to sales data.
+  flows: [authorizationCode]
+- scope: tenzo/forecast:read
+  description: Read access to demand-forecast data.
+  flows: [authorizationCode]
+- scope: tenzo/area:read
+  description: Read access to area (grouping of locations) data.
+  flows: [authorizationCode]
+- scope: tenzo/location:read
+  description: Read access to location data.
+  flows: [authorizationCode]

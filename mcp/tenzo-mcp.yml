@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://support.gotenzo.com/developers/mcp-server/
+server:
+  name: tenzo
+  transport: http
+  url: https://ai.gotenzo.com/mcp
+  auth: oauth2
+  release: beta
+  released: '2026-05'
+  access: read-only
+description: >-
+  The Tenzo MCP server gives AI assistants read-only access to restaurant analytics, reviews, and
+  manager logs through natural language. Users authorize with their Tenzo account via OAuth on
+  first connection. Documented clients include Claude Web, Claude Desktop, Claude Code, ChatGPT,
+  Gemini CLI, and Gemini Enterprise. It can read data and change Tenzo configuration but cannot
+  modify restaurant data.
+install:
+  claude_code: claude mcp add --transport http tenzo https://ai.gotenzo.com/mcp/
+  claude_connector_url: https://ai.gotenzo.com/mcp
+  gemini_cli_config: |
+    {
+      "mcpServers": {
+        "tenzo": { "url": "https://ai.gotenzo.com/mcp" }
+      }
+    }
+tools:
+- name: query_metrics
+  description: Query sales, labour cost, covers, transactions and more, grouped by location, day, or category.
+- name: list_reviews
+  description: List customer reviews from Google, TripAdvisor, and other platforms, with ratings and text.
+- name: list_logs
+  description: List manager logs and shift notes, filterable by location and date range.
+- name: get_analytics_context
+  description: Helper — returns currency, timezone, week start day, and date periods.
+- name: get_available_metrics
+  description: Helper — returns which metrics can be queried (e.g. net sales, labour cost).
+- name: get_available_dimensions
+  description: Helper — returns how results can be grouped (e.g. by location, day).
+- name: get_available_filters
+  description: Helper — returns how results can be filtered (e.g. by location, category).

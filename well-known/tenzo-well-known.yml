@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: probed
+notes: >-
+  Probed the standard /.well-known/ discovery surface across the marketing host, API host, and
+  OAuth authorization host. No documents were served (all 404). Absence is a valid recorded
+  result — no well-known catalog pointer is wired for Tenzo.
+documents:
+- host: https://gotenzo.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://www.gotenzo.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://api.gotenzo.com
+  path: /.well-known/security.txt
+  status: 404
+- host: https://api.gotenzo.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: https://auth.gotenzo.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: https://auth.gotenzo.com
+  path: /.well-known/oauth-authorization-server
+  status: 404

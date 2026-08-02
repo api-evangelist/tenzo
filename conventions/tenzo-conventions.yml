@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.gotenzo.com/developers/
+authentication:
+  style: oauth2-bearer
+  detail: >-
+    OAuth 2.0 Authorization Code (with PKCE). Access token supplied as `Authorization: Bearer
+    <token>` or as an `X-AUTH-TOKEN: <token>` header. HTTPS required.
+  ref: authentication/tenzo-authentication.yml
+base_url: https://api.gotenzo.com/public/v1/
+url_style:
+  trailing_slash: true
+  example: GET https://api.gotenzo.com/public/v1/general/locations/
+versioning:
+  style: uri-path
+  current: v1
+  ref: lifecycle/tenzo-lifecycle.yml
+media_type: application/json
+idempotency:
+  supported: false
+  notes: No idempotency-key contract documented (the public API surface is read-only GET access).
+pagination:
+  documented: unknown
+  notes: Not explicitly documented in the developer portal pages reviewed.
+rate_limiting:
+  documented: unknown
+error_envelope:
+  format: json
+  notes: Error-response envelope not formally documented; not RFC 9457 problem+json as far as located.
+agent_access:
+  mcp_server: mcp/tenzo-mcp.yml
+  notes: A hosted MCP server (https://ai.gotenzo.com/mcp) exposes read-only tools for AI assistants.

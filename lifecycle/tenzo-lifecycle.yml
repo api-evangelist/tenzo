@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.gotenzo.com/developers/
+versioning:
+  scheme: uri-path
+  current: v1
+  schema_version: v2
+  docs: https://support.gotenzo.com/developers/api-reference/
+  notes: >-
+    REST resources are versioned in the URL path (https://api.gotenzo.com/public/v1/). The data
+    schema is separately versioned ("Schema v2", March 2026) and exposed via the Schema Reference.
+tokens:
+  access_token_lifetime_seconds: 36000
+  refresh_token_expires: false
+status_page: https://status.gotenzo.com
+support: https://support.gotenzo.com/
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No formal deprecation/Sunset-header policy located in the developer docs.
+deprecated_operations: []

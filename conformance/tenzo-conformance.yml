@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.gotenzo.com/developers/auth-flow/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: Authorization Code flow with client_id/client_secret, token + revoke endpoints at auth.gotenzo.com.
+- id: oauth2-pkce
+  conforms: true
+  evidence: PKCE support announced Apr 2026 for the Authorization Code flow.
+- id: rfc6749-authorization-code
+  conforms: true
+  evidence: Standard authorization_code and refresh_token grant types documented.
+- id: oidc-discovery
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on auth.gotenzo.com.
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server returns 404 on auth.gotenzo.com.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error envelope documented.
+- id: gdpr
+  conforms: true
+  evidence: Published GDPR compliance page at https://www.gotenzo.com/gdpr/.

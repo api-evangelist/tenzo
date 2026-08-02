@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://developers.gotenzo.com/
+scheme: dated
+docs: https://developers.gotenzo.com/
+notes: >-
+  Recent developer-tooling updates surfaced on the Tenzo Developer Portal "What's new" panel.
+  Recent window only — the live developer portal is the source of truth.
+entries:
+- date: '2026-05'
+  title: MCP Server beta released
+  breaking: false
+  highlights:
+  - Connect AI assistants to Tenzo via the Model Context Protocol (https://ai.gotenzo.com/mcp).
+- date: '2026-04'
+  title: Auth Flow — OAuth 2.0 update
+  breaking: false
+  highlights:
+  - New PKCE support for the Authorization Code flow.
+  - Refresh tokens and updated scopes.
+- date: '2026-03'
+  title: Schema v2 — additional fields
+  breaking: false
+  highlights:
+  - Additional fields exposed for integration partners across all data sources.

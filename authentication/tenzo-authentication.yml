@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://support.gotenzo.com/developers/auth-flow/
+docs: https://support.gotenzo.com/developers/auth-flow/
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  pkce: true
+  token_transport:
+  - header: Authorization
+    format: Bearer <access_token>
+  - header: X-AUTH-TOKEN
+    format: <access_token>
+  access_token_lifetime_seconds: 36000
+  refresh_token_expires: false
+  provisioning: manual
+  provisioning_contact: partnerships@gotenzo.com
+schemes:
+- name: OAuth2
+  type: oauth2
+  flow: authorizationCode
+  pkce_supported: true
+  authorizationUrl: https://auth.gotenzo.com/o/authorize
+  tokenUrl: https://auth.gotenzo.com/o/token/
+  revocationUrl: https://auth.gotenzo.com/o/revoke_token/
+  redirect_uri_limit: 3
+  notes: >-
+    Partner applications are provisioned manually by Tenzo (email partnerships@gotenzo.com) and
+    receive a Client ID, Client Secret, and a granted set of scopes. The Authorization Code grant
+    exchanges an authorization code for an access token (10-hour lifetime) plus a non-expiring
+    refresh token. Access tokens are passed either as an `Authorization: Bearer` header or an
+    `X-AUTH-TOKEN` header on requests to https://api.gotenzo.com/public/v1. HTTPS is required.
