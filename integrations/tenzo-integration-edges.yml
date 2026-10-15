@@ -3,6 +3,7 @@ method: searched
 checked:
 - mews-com/integrations/mews-com-integration-edges.yml
 - okta/integrations/okta-integration-edges.yml
+- shopify/integrations/shopify-integration-edges.yml
 - toast/integrations/toast-integration-edges.yml
 source:
 - okta/integrations/okta-integration-edges.yml
@@ -44,6 +45,24 @@ edges:
   - OKTA_VERIFIED
   features:
   - OIDC
+- partner_name: Shopify (own)
+  partner: shopify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.shopify.com/tenzo
+  mirror_of: shopify/integrations/shopify-integration-edges.yml
+  apps:
+  - Tenzo
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+  publisher_verified:
+  - Built for Shopify
 - partner_name: Toast (own)
   partner: toast
   partner_match: mirror
