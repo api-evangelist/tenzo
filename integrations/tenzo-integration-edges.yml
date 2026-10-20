@@ -1,13 +1,35 @@
-generated: '2026-10-14'
+generated: '2026-10-20'
 method: searched
+source:
+- okta/integrations/okta-integration-edges.yml
+- https://zapier.com/apps/tenzo/integrations
 checked:
 - https://zapier.com/api/v4/apps/
 - mews-com/integrations/mews-com-integration-edges.yml
 - okta/integrations/okta-integration-edges.yml
 - shopify/integrations/shopify-integration-edges.yml
 - toast/integrations/toast-integration-edges.yml
-source:
-- okta/integrations/okta-integration-edges.yml
+- https://composio.dev/toolkits/tenzo
+- https://monid.ai/tools/tenzo
+- https://n8n.io/integrations/tenzo/
+- https://zapier.com/apps/tenzo/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: tenzo
+  url: https://zapier.com/apps/tenzo/integrations
+  external_url: http://www.gotenzo.com/
+  partner_tier: BRONZE
+  triggers:
+  - key: new_daily_forecast
+    label: New Daily Forecast
+  - key: new_summary_payments
+    label: New Summary Payments
+  - key: new_summary_sales
+    label: New Summary Sales
+  actions: []
+  searches: []
 edges:
 - partner_name: Mews (own)
   partner: mews-com
@@ -106,3 +128,163 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
+- partner_name: Deputy
+  partner: deputy
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/deputy
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: http://www.deputy.com/
+- partner_name: MySQL
+  partner: mysql
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/mysql
+  direction: third-party
+  category: Databases
+  partner_url: https://www.mysql.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: domain+name-among-holders
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: ChatGPT (OpenAI)
+  partner: openai
+  partner_match: domain+name-among-holders
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/chatgpt
+  direction: third-party
+  category: AI Assistants
+  partner_url: https://chat.openai.com/chat
+- partner_name: Microsoft Excel
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/excel
+  direction: third-party
+  category: Microsoft
+  partner_url: https://zapier.com/office.com
+- partner_name: Cloudbeds
+  partner: cloudbeds
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/cloudbeds
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://www.cloudbeds.com/lp/zapier/
+- partner_name: Karlia
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/karlia
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://karlia.fr/
+- partner_name: WinMan V8
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/winman-v8
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://zapier.com/www.winman.com
+- partner_name: Myna
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  relationship: ipaas-bridge
+  evidence: https://zapier.com/apps/tenzo/integrations/myna
+  direction: third-party
+  category: Productivity
+  partner_url: https://zapier.com/www.meetmyna.com
+templates:
+- title: Add new Tenzo daily sales to Xero
+  url: https://zapier.com/apps/tenzo/integrations/xero/209178/add-new-tenzo-daily-sales-to-xero
+  apps:
+  - tenzo
+  - xero
+- title: Upload new Tenzo sales to Google Sheets
+  url: https://zapier.com/apps/google-sheets/integrations/tenzo/209195/upload-new-tenzo-sales-to-google-sheets
+  apps:
+  - tenzo
+  - google-sheets
+- title: Upload new Tenzo forecasts to Google Sheets
+  url: https://zapier.com/apps/google-sheets/integrations/tenzo/209205/upload-new-tenzo-forecasts-to-google-sheets
+  apps:
+  - tenzo
+  - google-sheets
+- title: Save new Tenzo sales to QuickBooks Online
+  url: https://zapier.com/apps/quickbooks/integrations/tenzo/209214/save-new-tenzo-sales-to-quickbooks-online
+  apps:
+  - tenzo
+  - quickbooks
+- title: Save new Tenzo sales as Zoho Books invoices
+  url: https://zapier.com/apps/tenzo/integrations/zoho-books/209220/save-new-tenzo-sales-as-zoho-books-invoices
+  apps:
+  - tenzo
+  - zoho-books
+- title: Send new Tenzo sales to FreshBooks Classic
+  url: https://zapier.com/apps/freshbooks-legacy/integrations/tenzo/209230/send-new-tenzo-sales-to-freshbooks-classic
+  apps:
+  - tenzo
+  - freshbooks-legacy
+- title: Add new Tenzo sales to bexio
+  url: https://zapier.com/apps/bexio/integrations/tenzo/209235/add-new-tenzo-sales-to-bexio
+  apps:
+  - tenzo
+  - bexio
+- title: Update data sets daily in Planday from new daily forecasts in Tenzo
+  url: https://zapier.com/apps/planday/integrations/tenzo/696822/update-data-sets-daily-in-planday-from-new-daily-forecasts-in-tenzo
+  apps:
+  - tenzo
+  - planday
+- title: Update Planday data sets daily for new summary sales in Tenzo
+  url: https://zapier.com/apps/planday/integrations/tenzo/696828/update-planday-data-sets-daily-for-new-summary-sales-in-tenzo
+  apps:
+  - tenzo
+  - planday
+- title: Add new Tenzo daily sales to Planday's daily revenue feature
+  url: https://zapier.com/apps/planday/integrations/tenzo/696832/add-new-tenzo-daily-sales-to-plandays-daily-revenue-feature
+  apps:
+  - tenzo
+  - planday
+template_total: 10
