@@ -64,6 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Tenzo is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Tenzo is a restaurant analytics and business-intelligence platform that unifies data from point-of-sale, labor scheduling, inventory, reviews, and reservation systems into a single reporting layer. It aggregates across 90+ integrated platforms and layers AI, demand forecasting, and automated reporting on top so multi-site restaurant operators can manage staffing, food and labor cost, and revenue. Tenzo exposes a public REST API (api.gotenzo.com/public/v1), an OAuth 2.0 Authorization Code (PKCE) partner integration for per-customer access, and a hosted Model Context Protocol (MCP) server for connecting AI assistants directly to restaurant data.
 
-Backed by: techstars — https://gotenzo.com/
+**Areas:** Company · Restaurant · Analytics · Business Intelligence · Reporting · Forecasting · Hospitality · Point-of-Sale · Data Aggregation · MCP · Artificial Intelligence
+
+## Tenzo on APIs.io
+
+Everything profiled for Tenzo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tenzo/](https://apis.io/providers/tenzo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Tenzo API](https://apis.io/apis/tenzo/tenzo-api/) — Public REST API for accessing restaurant analytics data — locations, areas, sales, and forecast data — secured with OAuth 2.0 Bearer tokens. Partners…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [tenzo](https://apis.io/servers/tenzo/tenzo/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Tenzo Authentication](https://apis.io/security/tenzo/tenzo-authentication/)
+- [Tenzo Domain Security](https://apis.io/security/tenzo/tenzo-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Tenzo Scopes](https://apis.io/scopes/tenzo/tenzo-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://gotenzo.com/)
+- [Documentation](https://support.gotenzo.com/docs/)
+- [Getting started](https://support.gotenzo.com/developers/auth-flow/)
+- [API reference](https://support.gotenzo.com/developers/api-reference/)
+- [Support](https://support.gotenzo.com/)
+- [Blog](https://www.gotenzo.com/resources/insights-tenzo/)
+- [Compliance](https://www.gotenzo.com/gdpr/)
+- [Privacy policy](https://www.gotenzo.com/privacy-policy/)
+- [Status](https://status.gotenzo.com)
+
+## API Evangelist rating
+
+**Kin Score 29.6** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 27.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 32.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tenzo/](https://apis.io/providers/tenzo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tenzo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tenzo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
